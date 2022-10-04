@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 // const axios = require('axios').default;
 
 const App = () => {
@@ -7,10 +7,10 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://webcode.me")
+      .get('http://webcode.me')
       .then((resp) => {
         console.log(resp.data);
-        setData(resp.data)
+        setData(resp.data);
       })
       .catch(function (error) {
         // handle error
@@ -22,6 +22,6 @@ const App = () => {
       <div>Ekyc Documents</div>
       <div>{data}</div>
     </div>
-    );
+  );
 };
 export default App;

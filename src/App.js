@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.less';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -9,7 +9,7 @@ import {
   ZhihuOutlined
 } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import CustomApp from '../src/CustomApp/index';
 
 const { Header, Sider, Content, Footer } = Layout;
@@ -31,25 +31,25 @@ const App = () => {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={['1']}
           items={[
             {
-              key: "1",
+              key: '1',
               icon: <ContainerOutlined />,
               label: <Link to="ekyc-documents">EKYC Documents</Link>,
             },
             {
-              key: "2",
+              key: '2',
               icon: <FileTextOutlined />,
               label: <Link to="ocr">OCR</Link>,
             },
             {
-              key: "3",
+              key: '3',
               icon: <UserOutlined />,
               label: <Link to="face-detection">Face Detection</Link>,
             },
             {
-              key: "4",
+              key: '4',
               icon: <ZhihuOutlined />,
               label: <Link to="ruby-swing">Ruby Swing</Link>,
             },
@@ -61,7 +61,7 @@ const App = () => {
           {React.createElement(
             collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
             {
-              className: "trigger",
+              className: 'trigger',
               onClick: () => setCollapsed(!collapsed),
             }
           )}
@@ -69,7 +69,7 @@ const App = () => {
         <Content className="site-layout-background"><CustomApp/></Content>
         <Footer
           style={{
-            textAlign: "center",
+            textAlign: 'center',
           }}
         >
           Rikkeisoft ©2022 Created by HoangLV

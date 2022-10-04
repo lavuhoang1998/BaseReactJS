@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Routes, Route } from "react-router-dom";
-import EkycDocuments from "../CustomApp/EkycDocuments";
-import FaceDetection from "../CustomApp/FaceDetection";
-import OCR from "../CustomApp/OCR";
-import RubySwing from "../CustomApp/RubySwing";
-import "./index.css";
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import EkycDocuments from '../CustomApp/EkycDocuments';
+import FaceDetection from '../CustomApp/FaceDetection';
+import OCR from '../CustomApp/OCR';
+import RubySwing from '../CustomApp/RubySwing';
+import './index.css';
 
 const CustomApp = () => {
   return (
